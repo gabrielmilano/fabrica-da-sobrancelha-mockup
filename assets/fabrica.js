@@ -56,7 +56,7 @@
       // fotos do feed andam em velocidades diferentes na rolagem
       [[".f1", -6], [".f2", 10], [".f3", -12]].forEach(([s, v]) => gsap.to(s, { yPercent: v, ease: "none", scrollTrigger: { trigger: ".feed", start: "top bottom", end: "bottom top", scrub: true } }));
       // os stories entram em leque
-      gsap.from(".story", { y: 60, rotate: (i) => (i % 2 ? 4 : -4), opacity: 0, duration: .8, stagger: .07, ease: "power3.out", scrollTrigger: { trigger: "#stories", start: "top 85%", once: true } });
+      gsap.fromTo(".story", { y: 60, rotate: (i) => (i % 2 ? 4 : -4), opacity: 0 }, { y: 0, rotate: 0, opacity: 1, duration: .8, stagger: .07, ease: "power3.out", clearProps: "transform,translate,rotate,scale,opacity", scrollTrigger: { trigger: "#stories", start: "top 85%", once: true } });
     }
     $$("[data-conta]").forEach((el) => {
       const fim = +el.dataset.conta, o = { v: 0 };
