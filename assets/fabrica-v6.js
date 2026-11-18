@@ -81,6 +81,10 @@
   $("#f-nome").addEventListener("input", () => atualizar(false));
   atualizar(false);
 
+  /* ---------- barra do celular só aparece depois que o botão do topo sai da tela ---------- */
+  const barraNav = $(".barra-cel"), acoesTopo = $(".heroi-marca .acoes");
+  if (barraNav && acoesTopo) new IntersectionObserver((e) => barraNav.classList.toggle("oculta", e[0].isIntersecting)).observe(acoesTopo);
+
   /* ---------- entrada ao rolar ---------- */
   const io = new IntersectionObserver((ent) => ent.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("vis"); io.unobserve(e.target); } }), { threshold: .1 });
   $$(".rev").forEach((el) => io.observe(el));
