@@ -281,3 +281,13 @@ a { color: inherit; }
 
 .barra-cel { transition: transform .3s ease; }
 .barra-cel.oculta { transform: translateY(110%); }
+
+/* logo em SVG: é imagem, não texto (como um arquivo de logo) */
+.wm { display: block; height: auto; overflow: visible; }
+.wm text { font: 600 100px var(--marca); font-variation-settings: "opsz" 9; fill: #fff; }
+.logo-vetor .wm { width: clamp(300px, 36vw, 560px); }
+.logo-bloco .wm { width: 128px; }
+@media (max-width: 640px) {
+  .logo-vetor .wm { width: min(100%, 330px); }
+  .logo-bloco .wm { width: 98px; }
+}
