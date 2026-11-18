@@ -16,7 +16,7 @@
 <link rel="apple-touch-icon" href="assets/icone-rosa-180.png">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/fraunces-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/figtree-latin.woff2" crossorigin>
-<link rel="stylesheet" href="assets/fabrica.css?v=4c">
+<link rel="stylesheet" href="assets/fabrica.css?v=4d">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -75,8 +75,9 @@
         </ul>
       </div>
       <div class="heroi-fotos">
-        <figure class="arco"><img src="assets/fotos/design-close.webp" alt="Sobrancelha com design e henna feita na Fábrica" width="640" height="640" fetchpriority="high"></figure>
-        <figure class="bola"><img src="assets/fotos/lamination.webp" alt="Sobrancelhas com brow lamination" width="640" height="340"></figure>
+        <figure class="foto-principal"><img src="assets/fotos/design-close.webp" alt="Sobrancelha com design e henna feita na Fábrica" width="640" height="640" fetchpriority="high"></figure>
+        <figure class="foto-detalhe"><img src="assets/fotos/lamination.webp" alt="Sobrancelhas com brow lamination" width="640" height="340"></figure>
+        <div class="cartao-nota"><span class="cn-num">4,9</span><span class="cn-txt"><span class="cn-estrelas" aria-hidden="true"><svg><use href="#estrela"/></svg><svg><use href="#estrela"/></svg><svg><use href="#estrela"/></svg><svg><use href="#estrela"/></svg><svg><use href="#estrela"/></svg></span>424 avaliações no Google</span></div>
       </div>
     </div>
     <svg class="onda-base" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50C180 10 360 10 540 46s360 46 540 10 270-40 360-20V90H0z"/></svg>
@@ -160,14 +161,19 @@
         <h2>O que sai <em>da Fábrica</em></h2>
         <p>Toque em “Adicionar” para levar o serviço para a sua mensagem de agendamento.</p>
       </div>
-      <div class="arcos">
-        <article class="serv rev"><div class="serv-foto"><img src="assets/fotos/design-detalhe.webp" alt="Design de sobrancelha feito na Fábrica" width="560" height="400" loading="lazy"></div><h3>Design</h3><p>Desenho e limpeza no formato do rosto, com resultado natural.</p><button type="button" class="add" data-add="design"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></article>
-        <article class="serv rev" style="--d:.06s"><div class="serv-foto"><img src="assets/fotos/design-close.webp" alt="Sobrancelha com henna" width="640" height="640" loading="lazy"></div><h3>Henna</h3><p>Cor para preencher falhas e marcar o contorno por alguns dias.</p><button type="button" class="add" data-add="henna"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></article>
-        <article class="serv rev" style="--d:.12s"><div class="serv-foto"><img src="assets/fotos/lamination.webp" alt="Sobrancelhas com brow lamination" width="640" height="340" loading="lazy"></div><h3>Brow lamination</h3><p>Fios alinhados e com volume, com efeito penteado.</p><button type="button" class="add" data-add="lamination"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></article>
-        <article class="serv rev" style="--d:.18s"><div class="serv-foto"><img src="assets/fotos/trabalho-close.webp" alt="Sobrancelha natural vista de perto" width="640" height="640" loading="lazy"></div><h3>Micro e shadow</h3><p>Micropigmentação fio a fio ou esfumada. Começa com uma avaliação.</p><button type="button" class="add" data-add="micro"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></article>
-        <article class="serv rev"><div class="serv-foto"><img src="assets/fotos/lash.webp" alt="Cílios com lash design" width="600" height="360" loading="lazy"></div><h3>Lash</h3><p>Cílios desenhados para valorizar o olhar.</p><button type="button" class="add" data-add="lash"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></article>
-        <article class="serv rev" style="--d:.06s"><div class="serv-foto serv-cor"><svg aria-hidden="true"><use href="#ondas"/></svg></div><h3>Depilação facial</h3><p>Buço e rosto, com cera ou linha.</p><button type="button" class="add" data-add="depil"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></article>
-        <article class="serv rev" style="--d:.12s"><div class="serv-foto serv-cor serv-cor2"><svg aria-hidden="true"><use href="#ondas"/></svg></div><h3>Limpeza de pele</h3><p>Extração de cravos e cuidado com a pele do rosto.</p><button type="button" class="add" data-add="limpeza"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></article>
+      <div class="servs">
+        <article class="serv rev"><div class="serv-foto"><img src="assets/fotos/design-detalhe.webp" alt="Design de sobrancelha feito na Fábrica" width="560" height="400" loading="lazy"></div><div class="serv-corpo"><h3>Design</h3><p>Desenho e limpeza no formato do rosto, com resultado natural.</p><button type="button" class="add" data-add="design"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></div></article>
+        <article class="serv rev" style="--d:.06s"><div class="serv-foto"><img src="assets/fotos/design-close.webp" alt="Sobrancelha com henna" width="640" height="640" loading="lazy" style="object-position:50% 62%"></div><div class="serv-corpo"><h3>Henna</h3><p>Cor para preencher falhas e marcar o contorno por alguns dias.</p><button type="button" class="add" data-add="henna"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></div></article>
+        <article class="serv rev" style="--d:.12s"><div class="serv-foto"><img src="assets/fotos/lamination.webp" alt="Sobrancelhas com brow lamination" width="640" height="340" loading="lazy"></div><div class="serv-corpo"><h3>Brow lamination</h3><p>Fios alinhados e com volume, com efeito penteado.</p><button type="button" class="add" data-add="lamination"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></div></article>
+        <article class="serv rev"><div class="serv-foto"><img src="assets/fotos/trabalho-close.webp" alt="Sobrancelha natural vista de perto" width="640" height="640" loading="lazy" style="object-position:70% 55%"></div><div class="serv-corpo"><h3>Micro e shadow</h3><p>Micropigmentação fio a fio ou esfumada. Começa com uma avaliação.</p><button type="button" class="add" data-add="micro"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></div></article>
+        <article class="serv rev" style="--d:.06s"><div class="serv-foto"><img src="assets/fotos/lash.webp" alt="Cílios com lash design" width="600" height="360" loading="lazy"></div><div class="serv-corpo"><h3>Lash</h3><p>Cílios desenhados para valorizar o olhar.</p><button type="button" class="add" data-add="lash"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></div></article>
+        <article class="serv serv-texto rev" style="--d:.12s">
+          <h3>Também no rosto</h3>
+          <ul>
+            <li><div><b>Depilação facial</b><span>Buço e rosto, com cera ou linha.</span></div><button type="button" class="add" data-add="depil"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></li>
+            <li><div><b>Limpeza de pele</b><span>Extração de cravos e cuidado com a pele do rosto.</span></div><button type="button" class="add" data-add="limpeza"><svg aria-hidden="true"><use href="#mais"/></svg>Adicionar</button></li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
